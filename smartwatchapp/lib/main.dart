@@ -90,15 +90,15 @@ class FindDevicesScreen extends StatelessWidget {
         builder: (c, snapshot) {
           if (snapshot.data == null) {
             return FloatingActionButton(
-              child: Icon(Icons.stop),
+              child: const Icon(Icons.stop),
               onPressed: () => FlutterBlue.instance.stopScan(),
               backgroundColor: Colors.red,
             );
           } else {
             return FloatingActionButton(
-              child: Icon(Icons.search),
+              child: const Icon(Icons.search),
               onPressed: () =>
-                  FlutterBlue.instance.startScan(timeout: Duration(seconds: 4)),
+                  FlutterBlue.instance.startScan(timeout: const Duration(seconds: 4)),
             );
           }
         },

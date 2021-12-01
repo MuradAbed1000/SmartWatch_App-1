@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names, avoid_function_literals_in_foreach_calls, avoid_unnecessary_containers, unnecessary_brace_in_string_interps
+
 import 'dart:async';
 import 'dart:convert' show utf8;
 import 'package:flutter/material.dart';
@@ -121,7 +123,7 @@ class _SensorPageState extends State<SensorPage> {
         },
         child: Scaffold(
           appBar: AppBar(
-            title: Text('dht11 sensor'),
+            title: const Text('dht11 sensor'),
           ),
           body: Container(
             child: StreamBuilder<List<int>>(
