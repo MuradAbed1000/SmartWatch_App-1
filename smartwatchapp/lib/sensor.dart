@@ -5,7 +5,7 @@ import 'dart:convert' show utf8;
 import 'package:flutter/material.dart';
 import 'package:flutter_blue/flutter_blue.dart';
 
-import 'homeui.dart';
+//import 'homeui.dart';
 
 class SensorPage extends StatefulWidget {
   final BluetoothDevice? device;
